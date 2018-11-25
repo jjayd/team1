@@ -183,3 +183,11 @@ class Search:
             data3 = 0
             data4 = 0
             return (data, data2, data3, data4)
+
+    def category(str):
+        if str.find("인턴") != -1 or str.find("internship") != -1 :
+            return "인턴"
+        elif str.find("채용") != -1 or str.find("신입사원") != -1 or str.find("인재 모집") != -1 :
+            return "취업"
+        else :
+            return "제외"
