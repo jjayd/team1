@@ -186,6 +186,8 @@ class Search:
 
     #카테고리 구하는 메서드 정의
     def category(str):
+        if str.find("설명회") != -1 or str.find("세미나") != -1 or str.find("멘토링") != -1 or str.find("장학생") != -1
+            return "제외"
         if str.find("인턴") != -1 or str.find("internship") != -1 :
             return "인턴"
         elif str.find("채용") != -1 or str.find("신입사원") != -1 or str.find("인재 모집") != -1 :
