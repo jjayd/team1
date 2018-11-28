@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="관심 분야를 고르세요."
+        android:textSize="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <TextView
+        android:id="@+id/textView1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-이과-"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <GridLayout
+        android:layout_width="360dp"
+        android:layout_height="150dp">
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:checked="true"
+            android:text="기계" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="전기" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="화학" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:text="신소재" />
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="IT" />
+
+        <CheckBox
+            android:id="@+id/checkBox6"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="통계" />
+
+        <CheckBox
+            android:id="@+id/checkBox7"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:text="의예" />
+
+        <CheckBox
+            android:id="@+id/checkBox8"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="건축/토목" />
+
+        <CheckBox
+            android:id="@+id/checkBox9"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="항공" />
+
+    </GridLayout>
+    <TextView
+        android:id="@+id/textView1_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-문과-"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <GridLayout
+        android:layout_width="360dp"
+        android:layout_height="150dp">
+
+        <CheckBox
+            android:id="@+id/checkBox10"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:checked="true"
+            android:text="경영" />
+
+        <CheckBox
+            android:id="@+id/checkBox11"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="경제/회계" />
+
+        <CheckBox
+            android:id="@+id/checkBox12"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="법학/로스쿨" />
+
+        <CheckBox
+            android:id="@+id/checkBox13"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:text="사회/국제" />
+
+        <CheckBox
+            android:id="@+id/checkBox14"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="언론/신방" />
+
+        <CheckBox
+            android:id="@+id/checkBox15"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="정치/외교" />
+
+        <CheckBox
+            android:id="@+id/checkBox16"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:text="언어" />
+
+        <CheckBox
+            android:id="@+id/checkBox17"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="세무/관세" />
+
+        <CheckBox
+            android:id="@+id/checkBox18"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="역사" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택완료" />
+
+</LinearLayout>
