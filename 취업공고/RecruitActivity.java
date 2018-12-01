@@ -64,6 +64,9 @@ public class RecruitActivity extends AppCompatActivity {
                                 mStore.collection("recruit").document(document.getId()).delete();
                             }
                             for (int i = 0; i < 5; i++) {
+                                /*
+                                    여기가 파이어스토어에 데이터 저장하는 곳
+                                */
                                 Board bo = new Board("Los Angeles" + i, "CA3", "USA", "5000000L");
                                 mStore.collection("recruit").add(bo);
                             }
