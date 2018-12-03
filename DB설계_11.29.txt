@@ -28,16 +28,6 @@
  - 게시판 번호, 방 번호, object별 인덱스, 관련학과, 학교, 제목, 내용, 접수기간, 원본 URL, 게시 날짜
 
 
-대외활동 게시판 테이블
-
- - 게시판 번호, 방 번호, 공모분야, 공모주제, 응모일정, 시상내역, 주최사, 원본 URL, 링크, 게시 날짜
-
-
-
-동아리/학회 게시판 테이블
-
-* 아직 미완
-
 
 채용 중복 테이블
 
@@ -99,21 +89,6 @@ CREATE TABLE NEW_RECRUIT(
  URL VARCHAR(100) NOT NULL,
  PostDate DATE NOT NULL,
  PRIMARY KEY(CNO,RNO)
-);
-
-CREATE TABLE CONTEST(
- CNO VARCHAR(1) NOT NULL,
- RNO INT NOT NULL,
- Field VARCHAR(20) CHARACTER SET UTF8 NOT NULL,
- Topic VARCHAR(20) CHARACTER SET UTF8 NOT NULL,
- Reward VARCHAR(20) CHARACTER SET UTF8 NOT NULL,
- Organizer VARCHAR(20) CHARACTER SET UTF8 NOT NULL,
- Title VARCHAR(50) CHARACTER SET UTF8 NOT NULL,
- Contents TEXT CHARACTER SET UTF8 NOT NULL,
- FinishDate DATE NOT NULL,
- URL VARCHAR(100) NOT NULL,
- PostDate DATE NOT NULL,
- PRIMARY KEY(CNO, RNO)
 );
 
 CREATE TABLE OVER_RECRUIT(
